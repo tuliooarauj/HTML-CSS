@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+       
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500;1,600&display=swap');
+        @font-face {
+            font-family: OldLondon ;
+            src: url('fontes/Olondon_.otf') format('opentype'), url('fontes/OldLondon.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+
+        h1{
+            font-family: 'OldLondon', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            text-align: center;
+        }
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            font-family: 'Kaushan Script', 'serif';
+            font-size: 2em;
+
+        }
+        p{
+            font-family: 'Work Sans', 'Times New Roman', Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+
+      
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptate eaque asperiores debitis distinctio laudantium ratione consequatur voluptatem aliquam amet ipsum excepturi natus, voluptas modi eius rerum voluptatibus quis quisquam.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni accusantium nemo similique dolor deleniti voluptas porro harum aperiam tenetur hic aut animi minus ipsa perferendis, repudiandae sed fugit delectus sint!</p>
+    
+</body>
+</html>

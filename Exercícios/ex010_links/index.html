@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+   <style>
+     div{ /* A tag <div> é usada para criar um contêiner de bloco genérico que é usado para agrupar elementos e aplicar estilos a eles. */
+            display: inline-block;
+            background-color: lightgray;
+            text-align: left;
+            height: 150px;
+            width: 200px;
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;
+            /*ou --> border: 1px solid black;*/
+        }
+        div:hover{
+            background-color: aliceblue;
+        }
+   </style>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <!--tag <a> para atribuição de links externos-->
+    <!--tag "target blank" para abrir o site em outra guia-->
+    <p>Acessando o <a href="https://github.com/gustavoguanabara" target="_blank" rel = "external" >repositório publico no GitHub!</a> </p>  
+    <p><a href="https://www.youtube.com/" target="_blank" rel = "external"> Acessando o Youtube.</a></p>
+
+
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site, caso queira acessar também a <a href="pag002.html" rel="next">segunda página.</a></p>
+    <p>Caso queira acessar a <a href="noticias/pag003.html" target="_self">terceira página</a>, basta clicar no link. </p>
+
+    <h1>Links para download</h1> <!--lista dos types no GitHub-->
+<div>
+    
+    <ul>
+        <li><a href="linkDownload/DECLARAÇÃO DE VINCULO 2023 IFBA.pdf" download="DECLARAÇÃO DE VINCULO 2023 IFBA.pdf" type="application/pdf">Baixar declaração de vínculo IFBA em PDF</a></li>
+        <li><a href="linkDownload/DECLARAÇÃO DE VINCULO 2023 IFBA.zip" download="DECLARAÇÃO DE VINCULO 2023 IFBA.zip" type="application/zip">Baixar declaração de vínculo IFBA em aquivo compactado</a></li>
+    </ul>
+</div>
+</body>
+</html>

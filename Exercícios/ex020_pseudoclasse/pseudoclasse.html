@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+    <style>
+        div{ /* A tag <div> é usada para criar um contêiner de bloco genérico que é usado para agrupar elementos e aplicar estilos a eles.  BOX-LEVEL // SPAN É INLINE LEVEL */
+            display: inline-block;
+            background-color: lightgray;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;
+            padding: 10px; /* Espaçamento do border pra dentro. */
+            margin: 20px; /* Espaçamento do border para fora. */
+            /*ou --> border: 1px solid black;*/
+        }
+            /* A Pseudoclasse está relacionada com a configuração do estado de um determinado elemento. (CONFIGURAÇÃO DE ESTADO)*/
+
+        div:hover{ /* pseudoclasse hover: Interagir ao passar o mouse em cima */
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>
