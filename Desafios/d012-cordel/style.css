@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+}
+header{
+    background-color: black;
+    color: white;
+   text-align: center;
+   min-height: 150px;
+   margin: -23px -8px 0px -8px;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 50px;
+}
+header > p > a{
+    text-decoration: none;
+    color: white;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+.estrofe{
+    padding:20vh 20px;
+    line-height: 2em;
+}
+#img{
+    background-color: rgb(55, 55, 55);
+    color: white;
+}
+#normal{
+    margin-top: -30px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0px -8px;
+}
+footer > p{
+    padding: 5px;
+    margin: 0px;
+    margin-bottom: -7px;
+}
+footer > p > a{
+    color: white;
+    text-decoration: none;
+}
