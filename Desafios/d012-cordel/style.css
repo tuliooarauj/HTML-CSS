@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
 }
-body{
+html, body{
     height: 100vh;
 }
 header{
@@ -30,15 +30,20 @@ header a:hover, footer a:hover{
 }
 
 .estrofe{
-    padding:20vh 20px;
+    padding:20vh 30px;
     line-height: 2em;
 }
 #img{
     background-color: rgb(55, 55, 55);
     color: white;
 }
+#img > p{
+    background-color: rgba(0, 0, 0, 0.241);
+    width: 400px;
+}
 #normal{
-    margin-top: -30px;
+    
+    padding: 40px 30px;
 }
 footer{
     background-color: black;
