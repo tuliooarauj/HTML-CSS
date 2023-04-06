@@ -1,22 +1,38 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root{
+    --fonte0: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte1: 'Passion One', cursive;
+    --fonte2: 'Sriracha', cursive;
+}   
+
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 html, body{
     height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--fonte0);
 }
 header{
     background-color: black;
     color: white;
    text-align: center;
    min-height: 150px;
-   margin: -23px -8px 0px -8px;
+   
+   margin: -10px 0px 0px -8px;
+
 }
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte1);
+    font-size: 4em;
 }
 header > p{
     padding-bottom: 50px;
@@ -32,6 +48,9 @@ header a:hover, footer a:hover{
 .estrofe{
     padding:20vh 30px;
     line-height: 2em;
+    font-family: var(--fonte2);
+    font-size: 2em;
+    
 }
 #img{
     background-color: rgb(55, 55, 55);
@@ -39,17 +58,16 @@ header a:hover, footer a:hover{
 }
 #img > p{
     background-color: rgba(0, 0, 0, 0.241);
-    width: 400px;
+    display: inline-block;
 }
 #normal{
-    
+    background-color: white;
     padding: 40px 30px;
 }
 footer{
     background-color: black;
     color: white;
     text-align: center;
-    margin: 0px -8px;
 }
 footer > p{
     padding: 5px;
