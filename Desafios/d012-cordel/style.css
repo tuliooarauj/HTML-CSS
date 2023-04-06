@@ -45,22 +45,38 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
-.estrofe{
+section{
     padding:20vh 30px;
     line-height: 2em;
     font-family: var(--fonte2);
     font-size: 2em;
-    
 }
-#img{
+section > p{
+    padding-bottom: 2em;
+}
+section.img{
     background-color: rgb(55, 55, 55);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.492);
+    background-size: cover;
+    background-attachment: fixed; /* Efeito parallax */ 
 }
-#img > p{
-    background-color: rgba(0, 0, 0, 0.241);
+section.img > p{
+    background-color: rgba(0, 0, 0, 0.444);
     display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black ;
 }
-#normal{
+#img1{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    
+}
+#img2{
+    background-image: url('imagens/background002.jpg');
+    
+}
+.normal{
     background-color: white;
     padding: 40px 30px;
 }
