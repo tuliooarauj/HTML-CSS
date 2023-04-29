@@ -1,0 +1,58 @@
+body{
+    padding-bottom: 500px;
+}
+.container{
+    background-color: lightgray;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+    flex-wrap: wrap; /*Quebra de linha ao chegar no limite*/
+}
+
+.item{
+    background-color: gray;
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+    color: white;
+
+    display: flex; /* Somente para alinhamento centralizado */
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    background-color: gray;
+    border: 2px solid blue;
+    height: 50px;
+    color: white;
+    flex-basis: 30px; /* Regra de largura padrão */ 
+
+    display: flex; /* Somente para alinhamento centralizado */
+    align-items: center;
+    justify-content: center;
+
+    /*shorthand flex*/
+    flex: 1 1 50px; /* 1 de grow, 1 de shrink e 50px de basis */
+}
+
+#item-1{
+    flex-grow:2; /* Modelo de crescimento  PROPORÇÃO*/
+    order: 2;
+}
+#item-2, #item3{
+    flex-grow: 1;
+    
+}
+#item-2{
+   /* flex-basis:100px /* Ao redimensionar a imagem, o limite mínimo dos 100px é respeitado. */
+    order: 3;
+}
+#item-3{
+    flex-shrink: 2 ; /* Controla a forma como os elementos vão diminuir. PROPORÇÃO */
+    order: 1;
+}
